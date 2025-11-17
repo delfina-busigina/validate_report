@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('COnenct to git'){
             steps{
-                git url: 'https://github.com/delfina-busigina/validate_report.git', credentialsID: 'pers_github_cred'
+                git url: 'https://github.com/delfina-busigina/validate_report.git', credentialsId: 'pers_github_cred'
                 echo 'initialized connection'
             }
         }
